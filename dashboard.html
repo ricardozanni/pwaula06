@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem-vindo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Bem-vindo!</h2>
+        <p>Você está logado.</p>
+        <button id="logout">Sair</button>
+    </div>
+
+    <script>
+        document.getElementById("logout").addEventListener("click", function() {
+            localStorage.removeItem("usuarioCadastrado");
+            window.location.href = "login.html";
+        });
+    </script>
+</body>
+</html>

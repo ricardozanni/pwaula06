@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email">
+            <span class="erro" id="erroEmail"></span>
+
+            <label for="senha">Senha:</label>
+    <div class="password-container">
+            <input type="password" id="senha" name="senha">
+            <button type="button" class="toggle-senha" onclick="toggleSenha('senha')">Mostrar</button>
+    </div>
+<span class="erro" id="erroSenha"></span>
+
+<p><a href="#" id="esqueciSenha">Esqueci minha senha</a></p>
+<p id="senhaRecuperada" class="sucesso"></p>
+
+            <button type="submit">Entrar</button>
+        </form>
+        <p id="mensagemErro" class="erro"></p>
+        <p id="mensagemSucesso" class="sucesso"></p>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
